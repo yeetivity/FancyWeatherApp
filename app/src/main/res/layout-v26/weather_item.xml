@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#CC565656"
+    app:cardCornerRadius="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#CC565656"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp">
+
+        <TextView
+            android:id="@+id/textView_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/default_cardview_datetext"
+            android:textAlignment="viewStart"
+            android:textColor="#4DB6AC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/imageView_weathersymbol"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/textView_Date"
+            android:layout_alignBottom="@+id/textView_Date"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/textView_Date"
+            android:contentDescription="@string/contentDescription_WeatherSymbol" />
+
+        <TextView
+            android:id="@+id/textView_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_weathersymbol"
+            android:layout_alignBottom="@+id/imageView_weathersymbol"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/imageView4"
+            android:layout_toEndOf="@+id/imageView_weathersymbol"
+            android:autoSizeTextType="uniform"
+            android:text="@string/Default_cardview_temptext"
+            android:textAlignment="center"
+            android:textColor="#C5CAE9" />
+
+        <TextView
+            android:id="@+id/textView_RainIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_Winddirection"
+            android:layout_alignBottom="@+id/imageView_weathersymbol"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/default_RainIntensity"
+            android:textColor="#C5CAE9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_Windspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_Winddirection"
+            android:layout_alignBottom="@+id/textView_Winddirection"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/textView_Winddirection"
+            android:text="@string/default_WindSpeed"
+            android:textColor="#C5CAE9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_Winddirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_weathersymbol"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/default_WindDirection"
+            android:textColor="#C5CAE9"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/textView_RainIntensity"
+            android:layout_alignBottom="@+id/textView_RainIntensity"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toStartOf="@+id/textView_RainIntensity"
+            android:contentDescription="@string/contentdescription_droplet"
+            app:srcCompat="@drawable/droplet" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_alignTop="@+id/textView_Windspeed"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_alignBottom="@+id/textView_Windspeed"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/contentDescription_wind"
+            app:srcCompat="@drawable/wind" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

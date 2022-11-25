@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FancyWeatherApp</string>
+    <string name="Connection_textView">Connected</string>
+    <string name="defaultUpdate_textView">Last updated on:</string>
+    <string name="searchbutton_label">Search</string>
+    <string name="editPlace_hint">Place in sweden</string>
+    <string name="mssg_notconnected">not connected</string>
+    <string name="mssg_connected">Connected!</string>
+    <string name="Default_cardview_temptext">15°C</string>
+    <string name="default_cardview_temprectext">Temperature \n Recommendation</string>
+    <string name="default_cardview_datetext">Monday, 12 Nov \n12:00</string>
+    <string name="contentDescription_WeatherSymbol">A weather \nSymbol</string>
+    <string name="default_RainIntensity">11 mm/h</string>
+    <string name="default_WindSpeed">10 m/s</string>
+    <string name="default_WindDirection">NW</string>
+    <string name="contentdescription_droplet">droplet</string>
+    <string name="contentDescription_wind">wind</string>
+</resources>
